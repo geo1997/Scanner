@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4ED8E2</color>
+    <color name="colorPrimaryDark">#1BCBDA</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="payment">#3C8C3F</color>
+    <color name="greenBtn">#4caf50</color>
+
+    <color name="unseccu">#FF0000</color>
+    <color name="lightred">#9A0000</color>
+
+</resources>
