@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnTakePicture, btnScanBarcode;
+    Button btnTakePicture, btnScanBarcode,btnScanBarcodeForUnreserved;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initViews() {
 
         btnScanBarcode = findViewById(R.id.btnScanBarcode);
+        btnScanBarcodeForUnreserved= findViewById(R.id.btnScanForUnreserved);
         btnScanBarcode.setOnClickListener(this);
+        btnScanBarcodeForUnreserved.setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +34,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnScanBarcode:
                 startActivity(new Intent(MainActivity.this, ScannedBarcodeActivity.class));
                 break;
+
+            case R.id.btnScanForUnreserved:
+                startActivity(new Intent(MainActivity.this,ScannedBarcodeActivityUnreserved.class));
+                break;
+
         }
 
     }

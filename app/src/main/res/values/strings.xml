@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Scan Me</string>
     <string name="take_barcode_picture">Take Barcode Picture</string>
-    <string name="scan_barcode">Scan QR Code</string>
+    <string name="scan_barcode">Reserved Tickets</string>
+    <string name="scan_barcode_distance">On the Go</string>
+
     <string name="open_camera">OPEN CAMERA</string>
     <string name="send_email">SEND EMAIL</string>
 </resources>

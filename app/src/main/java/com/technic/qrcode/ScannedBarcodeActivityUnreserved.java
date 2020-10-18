@@ -29,7 +29,7 @@ import com.google.android.gms.vision.barcode.BarcodeDetector;
 
 import java.io.IOException;
 
-public class ScannedBarcodeActivity extends AppCompatActivity {
+public class ScannedBarcodeActivityUnreserved extends AppCompatActivity {
 
 
     SurfaceView surfaceView;
@@ -104,10 +104,10 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
                 try {
-                    if (ActivityCompat.checkSelfPermission(ScannedBarcodeActivity.this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                    if (ActivityCompat.checkSelfPermission(ScannedBarcodeActivityUnreserved.this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                         cameraSource.start(surfaceView.getHolder());
                     } else {
-                        ActivityCompat.requestPermissions(ScannedBarcodeActivity.this, new
+                        ActivityCompat.requestPermissions(ScannedBarcodeActivityUnreserved.this, new
                                 String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION);
                     }
 
@@ -152,7 +152,7 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
                                 int payment = Integer.parseInt(intentData);
 
                                 if(payment >=100){
-                                    dialog.setContentView(R.layout.success_reservation_dialog);
+                                    dialog.setContentView(R.layout.success_payment_dialog);
                                     dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                                     soundPool.play(success,1,1,0,0,1);
 
@@ -179,7 +179,7 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
 
 
                                 }else{
-                                    dialog.setContentView(R.layout.unsuccess_reservation_dialog);
+                                    dialog.setContentView(R.layout.unsuccess_payment_dialog);
                                     dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                                     soundPool.play(fail,1,1,0,0,1);
 

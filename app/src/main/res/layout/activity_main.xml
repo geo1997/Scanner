@@ -27,6 +27,20 @@
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
+    <Button
+        android:id="@+id/btnScanForUnreserved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScanBarcode"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="@string/scan_barcode_distance"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
 
 
 </RelativeLayout>

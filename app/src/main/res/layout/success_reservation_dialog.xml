@@ -37,7 +37,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Payment Success"
+                android:text="Ticket Verified"
                 android:textColor="@color/payment"
                 android:textSize="24sp"
                 android:textStyle="bold"
