@@ -28,6 +28,9 @@
         <activity android:name="com.technic.qrcode.ScannedBarcodeActivity"
             android:parentActivityName=".MainActivity"/>
 
+        <activity android:name=".ScannedBarcodeActivityUnreserved"
+            android:parentActivityName=".MainActivity"/>
+
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />

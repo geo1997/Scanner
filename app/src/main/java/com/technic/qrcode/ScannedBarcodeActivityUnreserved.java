@@ -49,7 +49,7 @@ public class ScannedBarcodeActivityUnreserved extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scan_barcode_reserved);
+        setContentView(R.layout.activity_scan_barcode_unreserved);
 
         dialog = new Dialog(this);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
